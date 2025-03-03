@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Montserrat;
+    src:url(../../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --accent-color: #E49245;
+    --background-color-un: #f8efe5;
+    --background-color-deux: #FFFFFF;
+    --colored-text: linear-gradient(90deg,  #E48E43, #DE7635);
+    --deep-white: rgb(242,243,247);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+input, textarea {
+    margin-bottom: 18px;
+    width: 400px;
+    height: 45px;
+    border-radius: 7px;
+    border: solid gray;
+    padding-left: 20px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    
+}
+
+input:focus, textarea:focus{
+    border: solid 2px var(--accent-color);
+    outline: none;
+  }
+
+textarea::placeholder {
+    padding-top: 13px;
+}
+input::placeholder, textarea::placeholder {
+    color: rgba(95, 95, 95, 0.565);
+}
+
+
+
+input[type="submit"] {
+    margin-bottom: 18px;
+    width: 425px;
+    height: 45px;
+    border-radius: 7px;
+    border: solid gray;
+    padding-left: 20px;
+    background-color: var(--deep-white);
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.475);
+    font-family:  Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+      transform: scale(1.005);  
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95);  
+}
+
+
+
+
+
+.left-image {
+    margin: 0px;
+    padding: 0px;
+    height: 100dvh;
+    width: 45dvw;
+    border-top-right-radius: 21px;
+    overflow: hidden;
+}
+
+.login-image {
+    margin: 0px;
+    padding: 0px;
+    height: 112dvh;
+    overflow: hidden;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+.logo {
+    width: 35px;
+    border-radius: 7px;
+    margin-right: 7px;
+}
+
+.platform-name {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.signin-prompt-container {
+    font-size: 13px;
+}
+
+.signin-prompt-container a {
+    all: unset;
+    color: blue;
+    cursor: pointer;
+}
+
+.or-text {
+    font-size: small;
+    color: black
+}
+
+
+
+.signin-prompt {
+    text-decoration: none;
+    
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+

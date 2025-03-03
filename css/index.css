@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Montserrat;
+    src:url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --accent-color: #E49245;
+    --background-color-un: #f8efe5;
+    --background-color-deux: #FFFFFF;
+    --colored-text: linear-gradient(90deg,  #E48E43, #DE7635);
+    --deep-white: rgb(242,243,247);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+
+
+
+
+
+.top-nav {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav a {
+    margin: 21px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.logo {
+    width: 28px;
+    border-radius: 7px;
+    margin-right: 7px;
+}
+
+.platform-name {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.nav-items {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.account-nav-item {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.dropdown-icon {
+    display: inline-block;
+    margin-left: 5px;
+    width: 10px;
+    color: var(--accent-color);
+}
+
+.account-nav-item .dropdown-icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.account-nav-item:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+
+.top-right-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 870px;
+}
+
+.top-right-nav a {
+    margin: 21px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-button {
+    font-weight: bold;
+    border: none;
+    background: var(--colored-text);
+    background-size: 200% 100%; 
+    color: white;
+    padding: 21px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-position 0.3s ease; 
+}
+
+.nav-button:hover {
+    background-position: 100% 50%; 
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.catchy-texts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: -999;
+    text-align: center;
+    margin: auto;
+    background-color: var(--background-color-un);
+    padding-bottom: 100px;
+}
+
+.usecase-text {
+    width: 800px;
+    margin: auto;
+    padding-top:200px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.usecase-text-two {
+    all: unset;
+    width: 800px;
+    margin: auto;
+    padding-top:200px;
+    font-size: 45px;
+    font-size: 40px;
+}
+
+.colored-text {
+    all: unset;
+    color:var(--accent-color);
+    font-size: 40px;
+}
+
+.what-we-do {
+    width: 600px;
+    margin: auto;
+    font-size: 16px;
+    margin-top: 23px;
+    color: rgb(83, 83, 83);
+
+}
+
+.get-started-button {
+    font-weight: bold;
+    border: none;
+    background: var(--colored-text);
+    background-size: 200% 100%; 
+    color: white;
+    padding: 42px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 23px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.get-started-button:active {
+    transform: scale(0.95);
+}
+
+.moving-images {
+    position: fixed;
+    overflow: hidden;
+    /* width: 100%;  */
+    margin-top: 20px; 
+  }
+  
+  .moving-images img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin-right: 10px; 
+  }

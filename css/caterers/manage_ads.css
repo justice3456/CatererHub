@@ -1,0 +1,457 @@
+@font-face {
+    font-family: Montserrat;
+    src:url(../../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --accent-color: #E49245;
+    --background-color-un: #f8efe5;
+    --background-color-deux: #FFFFFF;
+    --colored-text: linear-gradient(90deg,  #E48E43, #DE7635);
+    --deep-white: #f9f9f9;
+    --deep-white-two: #f1efef;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--accent-color); 
+    outline: none; 
+}
+
+
+input, textarea {
+    padding: 10px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+   
+}
+
+button {
+    font-family:  Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.hide-me {
+    display: none;
+}
+
+
+
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--background-color-deux);
+    padding: 20px;
+    width: 300px;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100px;
+}
+
+.side-nav a {
+    margin: 21px;
+    margin-left: 25px;
+    color: inherit;
+    cursor: pointer;
+    top: 0; /* Adjusted to stay at the top of the page */
+    left: 0; /* Ensures it's aligned to the left edge */
+    z-index: 9999; /* High z-index to ensure it appears on top of everything */
+}
+
+.logo {
+    width: 28px;
+    border-radius: 7px;
+    margin-right: 7px;
+}
+
+.body-content {
+    margin-top: -26px;
+    padding: 0px;
+}
+
+.platform-name {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.nav-item-selected {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-decoration: var(--accent-color) underline;
+    text-decoration-thickness: 3px;
+}
+
+.icon {
+    width: 15px;
+    margin-right: 14px;
+}
+
+.nav-button {
+    background-color: var(--accent-color);
+    border: 0px;
+    padding: 10px;
+    padding-left: 77px;
+    padding-right: 77px;
+    margin-left: 28px;
+    margin-top: 20px;
+    border-radius: 10.5px;
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: transform 0.3s ease; 
+}
+
+.nav-button:active {
+    transform:scale(0.95); 
+}
+
+.top-nav {
+    margin-left: 348px;
+    display: flex;
+    height: 80px;
+    width: 76.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 10.5px; 
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+.top-nav a {
+    display: flex;
+    place-items: center;
+    margin: 21px;
+    color: inherit;
+}
+
+.top-nav .nav-items {
+    display: flex;
+    place-items: center;
+    margin: 21px;
+    margin-left: 10px;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-container {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 1095px;
+    margin-top: 70px;
+
+}
+
+.subscription-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    margin-left: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--deep-white);
+    border-radius: 10px; 
+    background-color: var(--background-color-deux); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.subscription-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.subscription-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color); 
+    margin-bottom: 10px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.subscription-description {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.subscription-button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.subscription-button:hover {
+    transform: scale(1.05); 
+}
+
+.subscription-button:active {
+    transform: scale(0.95); 
+}
+
+.promotion-status {
+    font-weight: bold;
+    color: green;
+}
+
+
+
+
+
+
+/* General styles (keep existing styles intact) */
+
+/* Ad Management Section */
+.ad-management-container {
+    margin-left: 350px;
+    margin-top: 120px;
+    padding: 20px;
+    max-width: 1100px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.ad-management-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.ads-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.ad-post {
+    background-color: var(--background-color-deux);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ad-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ad-text {
+    margin-bottom: 15px;
+}
+
+.ad-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ad-text p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Action buttons - edit, delete, promote */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;  /* Ensure buttons are below the image and text */
+}
+
+.action-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: scale(1.05);
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+/*pop up styling*/
+/* Modal (Pop-up) Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.action-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input.delete-action-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button.delete-action-btn:hover {
+    background-color: rgb(210, 105, 105);
+}
+
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.nav-items, .nav-item-selected:active {
+    transform: 0.3s ease-in-out;
+}
+
+.nav-items:active, .nav-item-selected:active {
+    transform: scale(0.95);
+}

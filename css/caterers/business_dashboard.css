@@ -1,0 +1,272 @@
+@font-face {
+    font-family: Montserrat;
+    src:url(../../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --accent-color: #E49245;
+    --background-color-un: #f8efe5;
+    --background-color-deux: #FFFFFF;
+    --colored-text: linear-gradient(90deg,  #E48E43, #DE7635);
+    --deep-white: #f9f9f9;
+    --deep-white-two: #f1efef;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-color: var(--background-color-deux);
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--deep-white-two);
+    padding: 20px;
+    width: 300px;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.side-nav a {
+    margin: 21px;
+    margin-left: 25px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo {
+    width: 28px;
+    border-radius: 7px;
+    margin-right: 7px;
+}
+
+.platform-name {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.nav-items {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.nav-item-selected {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-decoration: var(--accent-color) underline;
+    text-decoration-thickness: 3px;
+}
+
+.icon {
+    width: 15px;
+    margin-right: 14px;
+}
+
+.page-title {
+    position: relative;
+    top: 40px;
+    margin-left: 400px;
+    font-size: 21px;
+}
+
+.description-text {
+    position: relative;
+    top: 40px;
+    margin-left: 400px;
+    font-size: 13px;
+    color: grey
+}
+
+.squarish-card-container {
+    display: flex; 
+    align-items: center; 
+    margin-left: 400px; 
+    margin-top: 70px; 
+    gap: 4px; 
+
+}
+
+.squarish-card {
+    display: inline-block;
+    margin: 10px;
+    width: 200px; 
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.rectangular-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 70px;
+    gap: 20px; 
+}
+
+.rectangular-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+
+  .rectangular-card p {
+    padding-left: 30px;
+  }
+  
+  .squarish-card-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .rectangular-card p {
+    margin: 0;
+  }
+
+  .cancel-icon {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 340px;
+    cursor: pointer;
+  }
+
+
+  .nav-items, .nav-item-selected:active {
+    transform: 0.3s ease-in-out;
+}
+
+.nav-items:active, .nav-item-selected:active {
+    transform: scale(0.95);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1000px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+
+
+.plan-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 350px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.plan-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-card li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.platinum {
+    border-color: var(--accent-color); /* Gold border for Platinum plan */
+}
+
+.platinum h3 {
+    color: var(--accent-color); /* Gold color for Platinum plan heading */
+}
+
+.ad-post {
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center; /* Centers text horizontally */
+    margin: 50px auto 10px auto; /* Centers the entire post horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers flex items horizontally */
+    justify-content: center; /* Centers flex items vertically */
+}
+
+.ad-image {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ad-text {
+    margin-bottom: 15px;
+    text-align: center; /* Ensures text within is centered */
+}
+
+.ad-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ad-text p {
+    font-size: 14px;
+    color: #555;
+}
+
+.subscription-button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.subscription-button:hover {
+    transform: scale(1.05); 
+}
+
+.subscription-button:active {
+    transform: scale(0.95); 
+}
