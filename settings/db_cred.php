@@ -2,6 +2,6 @@
 // Database credentials
 define('SERVER', ''); 
 define('USERNAME', ''); 
-define('PASSWD', ''); // Database password
-define('DATABASE', ''); // Database name
+define('PASSWD', '');
+define('DATABASE', '');
 ?>
